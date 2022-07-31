@@ -1,0 +1,31 @@
+
+
+[
+  
+    {
+    
+        "name": "Michael",
+        "job":"developer"
+    },
+    {
+        "name": "Lindsay",
+        "job":"tester"
+    },
+    {
+        "name": "Tobias",
+        "job":"Devops"
+    },
+    {
+        "name": "Byron",
+        "job":"Scrummaster"
+    },
+    {
+        
+        "name": "George",
+        "job":"developer"
+    },
+    {
+        "name": "Rachel",
+        "job":"tester"
+    }
+]  

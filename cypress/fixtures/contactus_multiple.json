@@ -1,0 +1,32 @@
+[
+    {
+        "firstName":"nityanand",
+        "lastName":"bhosale",
+        "email":"bhosalenityanand5@gmail.com",
+        "message":"hi m learning js"
+    },
+    {
+        "firstName":"nityanand2",
+        "lastName":"bhosale2",
+        "email":"bhosalenityanand5@gmail.com",
+        "message":"hi m learning js"  
+    },
+    {
+        "firstName":"nityanand3",
+        "lastName":"bhosale3",
+        "email":"bhosalenityanand5@gmail.com",
+        "message":"hi m learning js"  
+    },
+    {
+        "firstName":"nityanand4",
+        "lastName":"bhosale4",
+        "email":"bhosalenityanand5@gmail.com",
+        "message":"hi m learning js" 
+    },
+    {
+        "firstName":"sadanand",
+        "lastName":"bhosale5",
+        "email":"bhosalesadanand5@gmail.com",
+        "message":"hi m learning python" 
+    }
+]

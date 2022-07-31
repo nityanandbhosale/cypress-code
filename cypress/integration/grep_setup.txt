@@ -1,0 +1,9 @@
+how to set up grep plugin here
+
+1> install the grep dependancy plugin
+----> run this command in new  terminal ==> npm install -D cypress-grep
+
+2>  load this module from the support file or at the top of the spec file if not using the support file.
+===>  require('cypress-grep')()
+
+3> 
