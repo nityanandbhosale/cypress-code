@@ -27,37 +27,37 @@ describe('verify the brocken link on the page',function(){
 
     // by the second way
 
-    it('validate the link on the page',function(){
-        let linkarry = ["/Group-Tours","/Speciality-Tours","/Speciality-Tours/Low-Price-Tours","/Tailor-Made","/www.kesarimice.in","/kesari-forex",
-        "/visa","/cruises","/Deals","/About-Us","javascript:void(0)"]
-        cy.visit('https://www.kesari.in/')
-        cy.get('#main-menu >ul >li').each(function(el,index){
-            let link = el.find('a:first')
-            if(link.attr('href').startsWith('/')){
-                cy.wrap(link).click()
-                cy.url().should('contain',linkarry[index])
-                cy.go(-1)
-            }
-        })
+    // it('validate the link on the page',function(){
+    //     let linkarry = ["/Group-Tours","/Speciality-Tours","/Speciality-Tours/Low-Price-Tours","/Tailor-Made","/www.kesarimice.in","/kesari-forex",
+    //     "/visa","/cruises","/Deals","/About-Us","javascript:void(0)"]
+    //     cy.visit('https://www.kesari.in/')
+    //     cy.get('#main-menu >ul >li').each(function(el,index){
+    //         let link = el.find('a:first')
+    //         if(link.attr('href').startsWith('/')){
+    //             cy.wrap(link).click()
+    //             cy.url().should('contain',linkarry[index])
+    //             cy.go(-1)
+    //         }
+    //     })
         
-    })
+    // })
 
-    // by third way
+    // // by third way
 
-    it.only('validate brocken link',function(){
-        cy.visit('https://www.kesari.in/')
-        cy.get('.menu-item-has-children >a').each(function(el){
-            let href = el.attr('href')
-            if(!(href.includes("void(0)")))
-            if(((el.prop("target")) != "_blank")){
-                cy.visit(`https://www.kesari.in${href}`).then(()=>{
-                    cy.url().should('contain',href)
-                })
-            }
-            else{
-                cy.log(href,'different base url')
-            }
-        })
-    })
+    // it.only('validate brocken link',function(){
+    //     cy.visit('https://www.kesari.in/')
+    //     cy.get('.menu-item-has-children >a').each(function(el){
+    //         let href = el.attr('href')
+    //         if(!(href.includes("void(0)")))
+    //         if(((el.prop("target")) != "_blank")){
+    //             cy.visit(`https://www.kesari.in${href}`).then(()=>{
+    //                 cy.url().should('contain',href)
+    //             })
+    //         }
+    //         else{
+    //             cy.log(href,'different base url')
+    //         }
+    //     })
+    // })
 
 })

@@ -31,6 +31,10 @@ describe('to cheak the different api by gorest',function(){
            for(let keys in find[0]){
                cy.log(keys,find[0][keys])
            
+
+
+
+               
            
            cy.log(find)
            expect(find[0]).to.have.all.keys('id','email','name','gender','status')

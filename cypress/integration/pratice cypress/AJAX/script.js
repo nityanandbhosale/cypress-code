@@ -42,6 +42,19 @@ function getData(){
     });
  })
 }
+
+let reqs = new XMLHttpRequest()
+
+reqs.open('GET','https://reqres.in/api/users?page=2')
+reqs.send()
+
+
+
+
+
+
+
+
 // getData()
 
 // if you have get this data on button click then

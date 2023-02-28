@@ -12,6 +12,7 @@ describe('test',function(){
                cy.log(txt.trim())
                if(txt.trim()=="iphone 11 cover"){
                    cy.wrap(el).click({force:true})
+                   return false
                }
            })
        })
